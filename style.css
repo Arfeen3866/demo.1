@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    max-width: 1000px; /* Increased width to accommodate both hands */
+    width: 100%;
+}
+
+#game-board {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#discard-pile, #draw-pile {
+    width: 100px;
+    height: 140px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+#discard-pile {
+    background-color: #ddd;
+}
+
+#computer-hand, #player-hand {
+    margin: 20px 0;
+}
+
+#computer-cards, #player-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 80px;
+    height: 120px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card.red { background-color: #ff0000; }
+.card.blue { background-color: #0000ff; }
+.card.green { background-color: #00ff00; }
+.card.yellow { background-color: #ffff00; color: #000; }
+.card.wild { background: linear-gradient(45deg, #ff0000, #0000ff, #00ff00, #ffff00); color: #000; }
+
+/* Computer cards are not clickable and slightly faded */
+.computer-card {
+    cursor: default;
+    opacity: 0.8;
+}
+
+.computer-card:hover {
+    transform: none;
+}
+
+#game-status {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#new-game-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
