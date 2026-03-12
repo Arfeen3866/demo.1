@@ -19,7 +19,7 @@ For online hosting:
 
 ## Push to a GitHub repository.
 Enable GitHub Pages in Settings > Pages (select the main branch).
-Access at https://Arfen3866.github.io/repository-name/.
+Access at https://Arfeen3866.github.io/repository-name/.
 Gameplay
 ## Objective: Be the first to play all your cards.
 Turns: You go first. Play a card that matches the discard pile's color or number (or use a Wild). Special cards have effects:
